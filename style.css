@@ -21,7 +21,7 @@
 {
     text-align: center;
     padding-top: 180px;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 .banner-text h1
 {
@@ -32,6 +32,24 @@
 {
     font-size: 30px;
 }
+.neons {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow 
+  {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 #00fff2;
+  }
+ }
 .banner-btn
 {
     margin: 70px auto 0;
@@ -110,9 +128,13 @@ nav ul li a
 }
 @media screen and (max-width:770px)
 {
+    .banner-text p 
+    {
+        font-size: 14px;
+    }
     .banner-text h1 
     {
-        font-size: 44px;
+        font-size: 55px;
     }
     .banner-btn a 
     {
@@ -346,7 +368,7 @@ nav ul li a
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .input-row .input-group
 {
@@ -373,6 +395,11 @@ label
     margin-bottom: 6px;
     display: block;
     color: rgb(63, 68, 66);
+}
+.text1
+{
+    padding-top: 5px;
+    padding-left: 5px;
 }
 button
 {
@@ -446,4 +473,4 @@ tr td{
     padding: 20px;
     text-align: center;
     color: white;
-}
+} 
