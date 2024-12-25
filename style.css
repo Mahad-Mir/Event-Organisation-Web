@@ -21,7 +21,7 @@
 {
     text-align: center;
     padding-top: 180px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .banner-text h1
 {
@@ -439,4 +439,11 @@ tr td{
         flex-basis: 100%;
         padding: 20px;
     }
+}
+.footerbottom
+{
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
