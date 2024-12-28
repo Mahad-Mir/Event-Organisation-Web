@@ -25,7 +25,7 @@
 }
 .banner-text h1
 {
-    font-family: "Roboto Mono", monospace;
+    font-family: sans-serif, monospace;
     font-size: 130px;
 }
 .banner-text p
