@@ -47,6 +47,16 @@
             <p>TICKETS</p>
             <h1>Upcoming Events</h1>
         </div>
+        <div class="search-container">
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search Events" id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+            </div>
+        </div>
+        
         <div align="center">
             <div>
                 <div class="container">
@@ -216,7 +226,11 @@
 	speed: 1000,
 	speedAsDuration: true
 });
+const icon= document.querySelector('.icon');
+        const search= document.querySelector('.search');
+        icon.onclick=function(){
+            search.classList.toggle('active')
+        }
     </script>
-  
 </body>
 </html>
